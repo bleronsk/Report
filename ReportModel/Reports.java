@@ -1,11 +1,9 @@
 package sep.gruppea.Report.ReportModel;
 
-import sep.gruppea.Report.ReportModel.Reportbuilder;
-
 import java.time.Year;
 import java.util.Date;
 
-public class Report {
+public class Reports {
 
     private int id;
     private String report;
@@ -14,7 +12,7 @@ public class Report {
 
 
 
-    public Filme(String report,  String anliegen) {
+    public Reports(String report,  String anliegen) {
         this.id=id;
         this.report = report;
         this.anliegen = anliegen;
@@ -45,9 +43,9 @@ public class Report {
 
     @Override
     public String toString() {
-        return "Report{" +
+        return "Reports{" +
                 "report='" + report + '\'' +
                 ", anliegen='" + anliegen + '\'' +
-               }';
+                ' }';
     }
 }
